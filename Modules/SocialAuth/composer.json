@@ -1,0 +1,25 @@
+{
+    "name": "nwidart/socialauth",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\SocialAuth\\Providers\\SocialAuthServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\SocialAuth\\": ""
+        }
+    }
+}
