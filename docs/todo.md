@@ -1,5 +1,10 @@
 # TODO
 
+- 升級到 Laravel 5.8
+- 限定 E2E_TEST_ACCOUNT_EMAIL 只用在測試，權限驗證另外設定
+
+---
+
 - class table inheritance?
   - 可按讚？
   - better sorting/pagination performance?

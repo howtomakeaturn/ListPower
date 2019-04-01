@@ -24,15 +24,21 @@ ListPower 讓你可以針對特定主題，與社群一起蒐集整理資料，�
 
 ## 系統需求
 
-TODO
+ListPower 是基於 Laravel 5.7 版本開發，系統需要能跑 Laravel 5.7 以上的版本。
 
 ## 安裝
 
-TODO
+ListPower 基本上就是一個普通的 Laravel 應用程式。
+
+請 git clone 或是直接下載這份程式碼，之後按照一般流程架設即可
 
 ## 設定
 
-TODO
+預設使用 Facebook 帳號登入，請在 .env 中設定以下參數：
+
+- FACEBOOK_CLIENT_ID
+- FACEBOOK_CLIENT_SECRET
+- FACEBOOK_REDIRECT
 
 ## Roadmap
 
@@ -60,3 +66,7 @@ TODO
 
 - 更多登入方式
   - Google, Twitter, Native Login, etc...
+
+- 多種圖片上傳存放方式
+  - local public folder (default)
+  - cloudinary
