@@ -23,7 +23,8 @@
         "react-dom": "^16.7.0",
         "uuid": "^3.3.2",
         "vue": "^2.5.17",
-        "webpack-livereload-plugin": "^1.2.0"
+        "webpack-livereload-plugin": "^1.2.0",
+        "webpack-dev-server": ">=3.1.11"
     },
     "dependencies": {}
 }
