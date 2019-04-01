@@ -34,7 +34,7 @@ ListPower 是基於 Laravel 5.7 版本開發，系統需要能跑 Laravel 5.7 �
 
 ListPower 基本上就是一個普通的 Laravel 應用程式。
 
-請 git clone 或是直接下載這份程式碼，之後按照一般流程架設即可
+請 git clone 或是直接下載這份程式碼，之後按照一般流程架設即可。
 
 ## 設定
 
