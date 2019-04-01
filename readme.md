@@ -9,6 +9,10 @@ ListPower 讓你可以針對特定主題，與社群一起蒐集整理資料，�
 - [SportsMap 運動地圖](https://isportsmap.com/)
 - [ListBox 清單盒子 - 蒐集與整理各種實用、有趣的清單](https://listbox.app/)
 
+另外也請參考 ListPower 的發展背景故事：
+
+[清單力量 OPEN SOURCE：跟網友一起蒐集清單資料的系統](http://blog.turn.tw/?p=3720)
+
 ## 功能
 
 目前的「核心系統」有六大功能：
