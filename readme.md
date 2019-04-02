@@ -66,7 +66,7 @@ ListPower 基本上就是一個普通的 Laravel 應用程式。
 
 清單如果有欄位設定為「地址」類型，就會啟用地圖功能。
 
-請在開啟以下權限：
+請在 Google Cloud Platform 開啟以下 API 權限：
 
 - Maps Embed API
 - Google Maps JavaScript API
