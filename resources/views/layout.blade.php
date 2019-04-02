@@ -190,10 +190,6 @@
 
             <!-- Left Side Of Navbar -->
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="https://www.facebook.com/ListBox-%E6%B8%85%E5%96%AE%E7%9B%92%E5%AD%90-281621799412401/">Facebook 粉絲專頁</a>
-                </li>
-
                 <!--
                 <li class="nav-item">
                     <a class="nav-link" href="/about">網站介紹</a>
