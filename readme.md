@@ -28,7 +28,7 @@ ListPower 讓你可以針對特定主題，與社群一起蒐集整理資料，�
 
 ## 系統需求
 
-ListPower 是基於 Laravel 5.7 版本開發，系統需要能跑 Laravel 5.7 以上的版本。
+ListPower 是基於 Laravel 5.8 版本開發，系統需要能跑 Laravel 5.8 以上的版本。
 
 ## 安裝
 
