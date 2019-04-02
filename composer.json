@@ -11,13 +11,13 @@
         "php": "^7.1.3",
         "fideloper/proxy": "^4.0",
         "jrm2k6/cloudder": "^0.6.0",
-        "laravel/framework": "5.7.*",
+        "laravel/framework": "5.8.*",
         "laravel/socialite": "^4.0",
         "laravel/tinker": "^1.0",
         "league/csv": "^9.1",
         "nwidart/laravel-modules": "^4.0",
         "ramsey/uuid": "^3.8",
-        "vinkla/hashids": "^5.1"
+        "vinkla/hashids": "^5.2"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",
