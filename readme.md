@@ -38,7 +38,7 @@ ListPower 基本上就是一個普通的 Laravel 應用程式。
 
 ## 設定
 
-### Facebook 帳號登入
+### 1. Facebook 帳號登入
 
 預設使用 Facebook 帳號登入，請在 .env 中設定以下參數：
 
@@ -46,11 +46,11 @@ ListPower 基本上就是一個普通的 Laravel 應用程式。
 - FACEBOOK_CLIENT_SECRET
 - FACEBOOK_REDIRECT
 
-### 設定管理員
+### 2. 設定管理員
 
 TODO
 
-### 建立新清單
+### 3. 建立新清單
 
 透過網頁面板新增：
 
@@ -64,7 +64,7 @@ TODO
 - TODO
 - TODO
 
-### 啟用 Google 地圖
+### 4. 啟用 Google 地圖
 
 TODO
 
