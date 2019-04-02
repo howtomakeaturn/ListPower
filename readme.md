@@ -46,6 +46,24 @@ ListPower 基本上就是一個普通的 Laravel 應用程式。
 - FACEBOOK_CLIENT_SECRET
 - FACEBOOK_REDIRECT
 
+### 設定管理員
+
+TODO
+
+### 建立新清單
+
+透過網頁面板新增：
+
+- TODO
+- TODO
+- TODO
+
+透過網頁面板匯入：
+
+- TODO
+- TODO
+- TODO
+
 ### 啟用 Google 地圖
 
 TODO
