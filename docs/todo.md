@@ -1,7 +1,7 @@
 # TODO
 
-- 限定 E2E_TEST_ACCOUNT_EMAIL 只用在測試，權限驗證另外設定
 - configurable google map
+- 完成 or hide 管理 panel
 
 ---
 

@@ -324,7 +324,7 @@ class GeneralController extends Controller
 
     function createList(Request $request)
     {
-        if (Auth::check() && Auth::user()->email === env('E2E_TEST_ACCOUNT_EMAIL')) {
+        if (Auth::check() && Auth::user()->isAdmin()) {
             return view('create-list');
         }
     }
@@ -537,7 +537,7 @@ class GeneralController extends Controller
 
     function submitImportReal(Request $request)
     {
-        if (Auth::user()->email !== env('E2E_TEST_ACCOUNT_EMAIL')) {
+        if (Auth::user()->isAdmin()) {
             dd('error');
         }
 

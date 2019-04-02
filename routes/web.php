@@ -18,7 +18,7 @@ Route::get('/test-message', function() {
 });
 
 Route::get('/import', function() {
-    if (Auth::user()->email !== env('E2E_TEST_ACCOUNT_EMAIL')) {
+    if (!Auth::user()->isAdmin()) {
         dd('error');
     }
 

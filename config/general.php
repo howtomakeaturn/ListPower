@@ -2,7 +2,7 @@
 
 return [
     'super_admin' => [
-        env('E2E_TEST_ACCOUNT_EMAIL'),
+        env('ADMIN_ACCOUNT_EMAIL'),
         // ...
     ],
 ];

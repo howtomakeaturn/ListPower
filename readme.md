@@ -48,7 +48,7 @@ ListPower 基本上就是一個普通的 Laravel 應用程式。
 
 ### 2. 設定管理員
 
-TODO
+請在 .env 中設定參數：ADMIN_ACCOUNT_EMAIL
 
 ### 3. 建立新清單
 

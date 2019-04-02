@@ -32,4 +32,9 @@ class User extends Authenticatable
     {
         return $this->belongsToMany('App\Topic');
     }
+
+    function isAdmin()
+    {
+        return in_array($this->email, config('general.super_admin'));
+    }
 }
