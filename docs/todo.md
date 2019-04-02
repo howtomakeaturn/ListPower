@@ -1,10 +1,6 @@
 # TODO
 
-- configurable google map
-- 完成 or hide 管理 panel
-- 到底是 topic_user table 還是 config value？
-  - topic_user 是管理各份清單資料、設定清單
-  - config value 是能建立清單
+-
 
 ---
 
@@ -14,6 +10,10 @@
   - how facebook implements feed?
 
 ---
+
+- 到底是 topic_user table 還是 config value？make this part clear
+  - topic_user 是管理各份清單資料、設定清單
+  - config value 是能建立清單
 
 - album
 - hide review count info if it's not enabled

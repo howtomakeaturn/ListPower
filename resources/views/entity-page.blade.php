@@ -40,7 +40,7 @@
                         width="100%"
                         height="250"
                         frameborder="0"
-                        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCVBPE6cp_UXecayVKP5FAW5QpkBqlnxXg&q={{ $entity->addressForGoogle() }}">
+                        src="https://www.google.com/maps/embed/v1/place?key={{ env('GOOGLE_MAP_KEY') }}&q={{ $entity->addressForGoogle() }}">
                     </iframe>
                 </div>
             </div>

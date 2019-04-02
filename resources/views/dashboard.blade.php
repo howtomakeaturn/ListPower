@@ -42,7 +42,7 @@
                                     <form method="post" action="/fetch-coordinate">
                                         <input type="hidden" name="id" value="{{ $entity->id }}">
                                         {{ csrf_field() }}
-                                        <button class="btn btn-primary">Fetch</button>
+                                        <button class="btn btn-primary">撈取經緯度</button>
                                     </form>
                                 </div>
                             </div>

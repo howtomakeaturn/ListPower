@@ -244,7 +244,7 @@ class Entity extends Model
     {
         $geo = file_get_contents('https://maps.googleapis.com/maps/api/geocode/json' . '?'. http_build_query([
             'address' => $this->addressForGoogle(),
-            'key' => 'AIzaSyAfMDjx7BThAhMQCCGfbglB7NIEalJKH_I'// env('GOOGLE_MAP_KEY_UNRESTRICTED')
+            'key' => env('GOOGLE_MAP_KEY_UNRESTRICTED')
         ]));
 
         $geo = json_decode($geo);

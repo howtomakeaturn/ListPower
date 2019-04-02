@@ -75,7 +75,7 @@
 <script src='/js/my-location-button.js'></script>
 
 <script defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCVBPE6cp_UXecayVKP5FAW5QpkBqlnxXg&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?key={{ env('GOOGLE_MAP_KEY') }}&callback=initMap">
 </script>
 
 <style>

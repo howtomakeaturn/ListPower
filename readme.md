@@ -64,7 +64,18 @@ ListPower 基本上就是一個普通的 Laravel 應用程式。
 
 ### 4. 啟用 Google 地圖
 
-TODO
+清單如果有欄位設定為「地址」類型，就會啟用地圖功能。
+
+請在開啟以下權限：
+
+- Maps Embed API
+- Google Maps JavaScript API
+- Google Maps Geocoding API
+
+之後在 .env 中設定以下參數：
+
+- GOOGLE_MAP_KEY：這是用來在瀏覽器呼叫 Google 顯示地圖的 key，會在瀏覽器被看到，因此請設定好「HTTP 參照網址」
+- GOOGLE_MAP_KEY_UNRESTRICTED：這是在伺服器端呼叫 Google 將地址轉成經緯度的 key，不會在瀏覽器被看到，請設定好「IP 位址」或是以「無」設定
 
 ## Roadmap
 

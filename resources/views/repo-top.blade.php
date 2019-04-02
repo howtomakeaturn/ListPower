@@ -28,12 +28,14 @@
         </a>
     </li>
     @if (Auth::check() && $topic->users->count() && in_array(Auth::user()->email, $topic->users->pluck('email')->all()))
-    <li class="nav-item">
-        <a class="nav-link @if(Request::path() === 'dashboard/'.$topic->hashids()) active @endif" href="/dashboard/{{ $topic->hashids() }}">
-            <i class="fas fa-tachometer-alt"></i>
-            <span class="d-none d-md-inline">&nbsp;管理</span>
-        </a>
-    </li>
+        @if ($topic->hasAddressColumn())
+            <li class="nav-item">
+                <a class="nav-link @if(Request::path() === 'dashboard/'.$topic->hashids()) active @endif" href="/dashboard/{{ $topic->hashids() }}">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span class="d-none d-md-inline">&nbsp;管理</span>
+                </a>
+            </li>
+        @endif
     <li class="nav-item">
         <a class="nav-link @if(Request::path() === 'settings/'.$topic->hashids()) active @endif" href="/settings/{{ $topic->hashids() }}">
             <i class="fas fa-cog"></i>
