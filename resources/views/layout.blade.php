@@ -217,11 +217,21 @@
 
             <!-- Right Side Of Navbar -->
             <ul class="navbar-nav ml-auto">
-                <!--
-                <li class="nav-item">
-                    <a class="nav-link" href="/create-list">建立新清單</a>
+                @if (Auth::check() && Auth::user()->isAdmin())
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        建立新清單
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/create-list">
+                            手動設定欄位
+                        </a>
+                        <a class="dropdown-item" href="/import">
+                            匯入 CSV 檔
+                        </a>
+                    </div>
                 </li>
-                -->
+                @endif
                 @auth
                     <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
