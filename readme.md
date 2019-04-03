@@ -104,7 +104,14 @@ ListPower 基本上就是一個普通的 Laravel 應用程式。
 - 更多登入方式
   - Google, Twitter, Native Login, etc...
 
+## Contributing
+
+謝謝您考慮貢獻開發到本專案。
+
+目前專案處於早期核心設計階段，除了明顯的錯誤修正、功能加強、小範圍的優化歡迎直接送 PR 之外，請不要直接寫新功能的開發 PR。
+
+請跟我一起討論、設計之後，在確保早期核心設計清楚、簡單、一致的情況下，再進行開發。我們可以先一起討論設計下 spec，謝謝您。
+
 ## License
 
 Licensed under the GNU General Public License Version 3.0 or later.
-
