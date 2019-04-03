@@ -103,7 +103,3 @@ ListPower 基本上就是一個普通的 Laravel 應用程式。
 
 - 更多登入方式
   - Google, Twitter, Native Login, etc...
-
-- 多種圖片上傳存放方式
-  - local public folder (default)
-  - cloudinary

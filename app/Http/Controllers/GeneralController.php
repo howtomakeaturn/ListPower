@@ -501,21 +501,49 @@ class GeneralController extends Controller
 
     function uploadPhoto(Request $request)
     {
-        $response = \Cloudder::upload($request->file('image')->getRealPath());
+        if (config('image_upload.driver') === 'cloudinary') {
+            $response = \Cloudder::upload($request->file('image')->getRealPath());
 
-        $res = $response->getResult();
+            $res = $response->getResult();
 
-        $photo = new Photo();
+            $photo = new Photo();
 
-        $photo->url = $res['secure_url'];
+            $photo->url = $res['secure_url'];
 
-        $photo->user_id = Auth::user()->id;
+            $photo->user_id = Auth::user()->id;
 
-        $photo->entity_id = $request->get('entity_id');
+            $photo->entity_id = $request->get('entity_id');
 
-        $photo->save();
+            $photo->save();
 
-        return redirect()->back()->with('message.title', '上傳照片成功！');
+            return redirect()->back()->with('message.title', '上傳照片成功！');
+        } else if (config('image_upload.driver') === 'local_file') {
+            $file = $request->file('image');
+
+            $image = \Image::make($file->getRealPath());
+
+            $image->orientate();
+
+            $path = public_path(config('image_upload.local_file.path'));
+
+            $name = uniqid();
+
+            $image->encode('jpg');
+
+            $image->save($path . "/$name.jpg");
+
+            $photo = new Photo();
+
+            $photo->url = url(config('image_upload.local_file.path') . "$name.jpg");
+
+            $photo->user_id = Auth::user()->id;
+
+            $photo->entity_id = $request->get('entity_id');
+
+            $photo->save();
+
+            return redirect()->back()->with('message.title', '上傳照片成功！');
+        }
     }
 
     function submitImport(Request $request)
