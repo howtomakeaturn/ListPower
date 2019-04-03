@@ -103,3 +103,8 @@ ListPower 基本上就是一個普通的 Laravel 應用程式。
 
 - 更多登入方式
   - Google, Twitter, Native Login, etc...
+
+## License
+
+Licensed under the GNU General Public License Version 3.0 or later.
+
