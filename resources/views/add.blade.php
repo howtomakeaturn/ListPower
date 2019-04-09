@@ -22,7 +22,7 @@
                         <input type="hidden" name="id" value="{{ $topic->id }}">
 
                         <div class="form-group">
-                            <label for="">Name</label>
+                            <label for="">名稱</label>
                             <input type="text" name="name" class="form-control" value="" required>
                         </div>
 
