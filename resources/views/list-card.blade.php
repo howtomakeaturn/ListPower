@@ -17,7 +17,7 @@
         <h6 class="card-title text-truncate"><b><a href="/list/{{ $topic->hashids() }}">{{ $topic->name }}</a></b></h6>
         <div class="topic-description">{{ $topic->description }}</div>
 
-        <div class="mt-2 text-muted">
+        <div class="mt-2 text-muted" style="font-size: 0.875rem;">
             {{ $topic->entityCount() }} 筆資料 · {{ $topic->reviewCount() }} 則評分 · {{ $topic->commentCount() }} 個留言
         </div>
 
