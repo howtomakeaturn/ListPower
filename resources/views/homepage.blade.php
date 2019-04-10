@@ -7,7 +7,7 @@
     @if (true)
     <div class="row">
         <div class="col">
-            <div class="jumbotron mt-4 mb-0">
+            <div class="jumbotron mt-4 mb-0 p-5">
                 <h1 class="">
                     <span class="display-5 font-weight-bold">ListBox 清單盒子</span>
                     <!--

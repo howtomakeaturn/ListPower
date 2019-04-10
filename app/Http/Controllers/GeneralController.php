@@ -16,7 +16,7 @@ class GeneralController extends Controller
 {
     function homepage()
     {
-        $topics = Topic::all();
+        $topics = Topic::where('status', Topic::STATUS_PUBLIC)->get();
 
         return view('homepage', compact('topics'));
     }
