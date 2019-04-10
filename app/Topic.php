@@ -7,6 +7,9 @@ use Hashids;
 
 class Topic extends Model
 {
+    const STATUS_PUBLIC = 0;
+    const STATUS_SEMI_PUBLIC = 10;
+
     function users()
     {
         return $this->belongsToMany('App\User');
