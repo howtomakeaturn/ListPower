@@ -565,7 +565,7 @@ class GeneralController extends Controller
 
     function submitImportReal(Request $request)
     {
-        if (Auth::user()->isAdmin()) {
+        if (!Auth::user()->isAdmin()) {
             dd('error');
         }
 
