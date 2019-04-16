@@ -47,12 +47,12 @@
 <section class="text-break">
     <h5 class=""><b>{{ $title }}</b></h5>
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6 info-data">
             @for ($i = 0 ; $i < ceil(count($fields)/2) ; $i++)
                 @include('info-field')
             @endfor
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 info-data">
             @for ($i = ceil(count($fields)/2) ; $i < count($fields) ; $i++)
                 @include('info-field')
             @endfor
@@ -60,3 +60,9 @@
     </div>
 </section>
 @endforeach
+
+<style>
+    .info-data {
+        word-break: break-all;
+    }
+</style>
