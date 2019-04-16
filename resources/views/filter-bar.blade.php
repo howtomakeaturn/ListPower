@@ -24,7 +24,7 @@
                         @endforeach
                     </div>
                     @if ($topic->hasAddressColumn())
-                    <div class="d-none d-md-block">
+                    <div class="d-none d-md-block" style="min-width: 115px; text-align: right;">
                         @include('map-button')
                     </div>
                     @endif
