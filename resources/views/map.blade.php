@@ -91,7 +91,7 @@
 @foreach ($entities as $entity)
 <!-- Modal -->
 <div class="modal" id="modal-{{ $entity->id }}" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog" role="document" style="max-width: 700px;">
         <div class="modal-content">
             <div class="modal-header">
                 <h4 class="mb-0"><b>{{ $entity->name }}</b></h4>
