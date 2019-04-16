@@ -60,6 +60,8 @@ class GeneralController extends Controller
 
             $center = AppCore::getMapCenter($locations);
 
+            if ($filter === null) $center['zoom'] = 10;
+
             return view('repo', compact('topic', 'entities', 'center'));
         }
 
