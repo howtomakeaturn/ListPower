@@ -29,7 +29,7 @@ class GeneralController extends Controller
 
         AppCore::setCurrentTab('data');
 
-        $entities = Entity::where('topic_id', $id)->get();
+        $entities = Entity::where('topic_id', $id)->where('status', Entity::STATUS_PUBLIC)->get();
 
         if ($filter = AppCore::resolveFilter($topic, $request)) {
             AppCore::setCurrentFilter($filter);

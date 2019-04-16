@@ -8,6 +8,10 @@ use AppCore;
 
 class Entity extends Model
 {
+    const STATUS_HIDDEN = -10;
+    const STATUS_PUBLIC = 0;
+    const STATUS_SEMI_PUBLIC = 10;
+
     function hashids()
     {
         return Hashids::encode($this->id);
