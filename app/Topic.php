@@ -247,4 +247,18 @@ class Topic extends Model
             $section->setupColumns($s->columns);
         }
     }
+
+    function getRecentContributors()
+    {
+        $rows = \DB::table('entities')
+            ->where('topic_id', $this->id)
+            ->distinct('user_id')
+            ->orderBy('created_at', 'desc')
+            ->limit(10)
+            ->get();
+
+        $users = User::findMany($rows->pluck('user_id'));
+
+        return $users;
+    }
 }

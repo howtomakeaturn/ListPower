@@ -7,7 +7,7 @@
     @if (true)
     <div class="row">
         <div class="col">
-            <div class="jumbotron mt-4 mb-0 p-5">
+            <div class="jumbotron mt-4 mb-0 p-5 text-center">
                 <h1 class="">
                     <span class="display-5 font-weight-bold">ListBox 清單盒子</span>
                     <!--
@@ -59,7 +59,7 @@
         <div class="col-xl-3 col-lg-4 col-md-6">
             <div class="card mt-3 ml-2 mr-2">
                 <div class="card-body">
-                    <div style="height: 155px;">
+                    <div style="height: 198px;">
                         <div style="font-size: 1.125rem;">您有想要整理的清單嗎？歡迎透過 Facebook 粉絲專頁，聯絡站長討論！</div>
                     </div>
                 </div>
