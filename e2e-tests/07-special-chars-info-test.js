@@ -19,7 +19,7 @@ test('the test', async t => {
     .navigateTo(process.env.APP_URL)
 
     .click(Selector('.card-title').nth(-1))
-    .click(Selector('.nav-item').nth(-3))
+    .click(Selector('.main .nav-item').nth(3))
 
     .typeText(Selector('input[name="name"]'), name, {paste: true, replace: true})
     .typeText(Selector('input[type="text"]').nth(1), info1, {paste: true, replace: true})
