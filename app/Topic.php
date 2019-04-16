@@ -254,10 +254,11 @@ class Topic extends Model
             ->where('topic_id', $this->id)
             ->distinct('user_id')
             ->orderBy('created_at', 'desc')
-            ->limit(10)
             ->get();
 
         $users = User::findMany($rows->pluck('user_id'));
+
+        $users = $users->sortByDesc('created_at');
 
         return $users;
     }

@@ -18,12 +18,12 @@
         <div class="topic-description">{{ $topic->description }}</div>
 
         <div class="mt-2" style="font-size: 0.875rem;">
-            {{ $topic->entityCount() }} 筆資料
+            <b>{{ $topic->entityCount() }}</b> 筆資料
             @if ($topic->reviewCount())
-            · {{ $topic->reviewCount() }} 則評分
+            · <b>{{ $topic->reviewCount() }}</b> 則評分
             @endif
             @if ($topic->commentCount())
-            · {{ $topic->commentCount() }} 個留言
+            · <b>{{ $topic->commentCount() }}</b> 個留言
             @endif
         </div>
         <div class="mt-2" style="font-size: 0.875rem;">
