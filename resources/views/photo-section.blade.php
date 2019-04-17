@@ -33,8 +33,10 @@
 <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
     <div class="slides"></div>
     <h3 class="title"></h3>
+    <!--
     <a class="prev" style="color:white; line-height: 40px;">‹</a>
     <a class="next" style="color:white; line-height: 40px;">›</a>
+    -->
     <a class="close" style="color:white;">×</a>
     <ol class="indicator"></ol>
 </div>
