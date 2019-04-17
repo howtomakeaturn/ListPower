@@ -66,7 +66,7 @@ class GeneralController extends Controller
         }
 
         $entities = $entities->sortByDesc(function($entity) {
-            return $entity->tags->count() + $entity->photos->count() + $entity->comments->count();
+            return $entity->tags->count() + $entity->photos->count() + $entity->comments->count() + $entity->reviews->count();
         });
 
         return view('repo', compact('topic', 'entities'));
