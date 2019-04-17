@@ -1,5 +1,9 @@
 @extends('layout')
 
+@section('head')
+<link rel="stylesheet" href="/vendor/gallery/css/blueimp-gallery.min.css">
+@endsection
+
 @section('content')
 
 <div class="container">
