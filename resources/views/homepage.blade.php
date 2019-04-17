@@ -14,8 +14,8 @@
                     <span class="badge badge-info align-top">Beta 測試版</span>
                     -->
                 </h1>
-                <p class="lead mt-3">讓網友們可以一起蒐集與整理各種實用、有趣的清單。</p>
-                <p class="lead mb-0">您有想要整理的清單嗎？歡迎透過 Facebook 粉絲專頁，聯絡站長討論！</p>
+                <p class="lead mt-3">網友們一起蒐集與整理的各種資料清單。</p>
+                <p class="lead mb-0">您有想要整理的清單嗎？歡迎透過 FB 粉專，聯絡站長討論！</p>
                 <!--
                 <a class="btn btn-primary btn-lg" href="#" role="button">動手做一張清單</a>
                 -->
