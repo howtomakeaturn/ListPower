@@ -36,8 +36,8 @@
     <!--
     <a class="prev" style="color:white; line-height: 40px;">‹</a>
     <a class="next" style="color:white; line-height: 40px;">›</a>
-    -->
     <a class="close" style="color:white;">×</a>
+    -->
     <ol class="indicator"></ol>
 </div>
 
