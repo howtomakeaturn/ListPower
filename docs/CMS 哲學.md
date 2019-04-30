@@ -17,15 +17,16 @@
 
 - 其實，這流程，就跟 git flow 同樣？只是變成 file structure
 
-# 系統檔案
+# 系統檔案（嚴謹，能夠 sync 升級）
 
 - system/helpers.php
 - routes/system/web.php
 
-# 主題資料夾
+# 主題資料夾（鬆散，隨便亂改沒關係）
 
 - resources/views/themes/
 - routes/themes/
+- app/Http/Controllers/Themes/
 
 # Todo
 
