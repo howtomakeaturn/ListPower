@@ -22,4 +22,6 @@
 
 # Todo
 
--
+- global admin panel
+- data management layer
+- upgradable system
