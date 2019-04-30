@@ -112,13 +112,3 @@ Route::get('/feeds', 'GeneralController@allFeeds');
 Route::post('/upload-photo', 'GeneralController@uploadPhoto');
 
 Route::post('/fetch-coordinate', 'GeneralController@fetchCoordinate');
-
-Route::prefix('ui')->group(function () {
-    Route::get('/', function () {
-        return view(theme_path('ui/welcome'));
-    });
-
-    Route::get('/{name}', function ($name) {
-        return view("ui/$name");
-    });
-});
