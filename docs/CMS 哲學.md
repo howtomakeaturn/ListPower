@@ -12,9 +12,14 @@
   - 這樣才是 developer friendly, 前者是 user friendly
 
 - 可以的話，逐漸提昇系統檔案的佔比即可
+- 總之，要用標準流程更新系統是很難的。檔案能夠拖放覆蓋來升級系統就很好
 
 # 系統檔案
 
 - system helpers.php
+- 讓 controllers, views 內容盡量少，data management layer 拉出來變成一層
 - ...define it
-- ...define it
+
+# Todo
+
+-
