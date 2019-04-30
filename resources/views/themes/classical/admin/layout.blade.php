@@ -69,7 +69,7 @@
 <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <a class="navbar-brand" href="{{ url('/admin') }}">
-            <b>Classical</b>
+            <b>Classical Admin</b>
             <!--
             <span class="badge badge-info align-top">Beta 測試版</span>
             -->
