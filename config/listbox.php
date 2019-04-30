@@ -2,6 +2,6 @@
 
 return [
 
-    'theme' => 'saas'
+    'theme' => 'classical'
 
 ];
