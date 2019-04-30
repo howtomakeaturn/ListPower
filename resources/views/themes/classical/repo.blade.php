@@ -20,8 +20,6 @@
 
     @include(theme_path('summary-bar'))
 
-    @include(theme_path('feed-bar'))
-
     @endif
 
     @include(theme_path('filter-bar'))
