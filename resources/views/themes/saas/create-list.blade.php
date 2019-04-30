@@ -1,28 +1,21 @@
-@extends('layout')
+@extends(theme_path('layout'))
 
 @section('content')
 
 <div class="container">
-    <div class="row">
-        <div class="col">
-
-            @include('repo-top')
-
-        </div>
-    </div>
-
-    <div class="row">
+    <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card mt-3">
-                <form method="post" action="/submit-settings">
+            <div class="card mt-4">
+                <div class="card-header">
+                    <h3 class="h6 mb-0">建立新清單</h3>
+                </div>
+                <form method="post" action="/submit-list">
                     {{ csrf_field() }}
-                    <input type="hidden" name="id" value="{{ $topic->id }}">
-                    @include('add-edit-topic')
+                    @include(theme_path('add-edit-topic'))
                 </form>
             </div>
         </div>
     </div>
-
 </div>
 
 <div class="mt-4"></div>

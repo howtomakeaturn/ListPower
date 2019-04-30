@@ -1,4 +1,4 @@
-@extends('layout')
+@extends(theme_path('layout'))
 
 @section('content')
 
@@ -12,7 +12,7 @@
     <div class="row no-gutters" style="margin-left: -0.5rem; margin-right: -0.5rem;">
         @foreach ($contributions as $contribution)
         <div class="col-xl-3 col-lg-4 col-md-6">
-            @include('contributor-card')
+            @include(theme_path('contributor-card'))
         </div>
         @endforeach
     </div>

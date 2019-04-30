@@ -22,7 +22,7 @@ Route::get('/import', function() {
         dd('error');
     }
 
-    return view('import');
+    return view(theme_path('import'));
 });
 
 Route::post('/import', 'GeneralController@submitImport');
@@ -40,7 +40,7 @@ Route::get('/a-very-secret-really-dangerous-url-for-testing', function() {
 Route::get('/dd', function () {
     $topics = App\Topic::all();
 
-    return view('dd', compact('topics'));
+    return view(theme_path('dd'), compact('topics'));
 });
 
 Route::get('/ss', function () {
@@ -56,7 +56,7 @@ Route::get('/ss', function () {
 });
 
 Route::get('/about', function () {
-    return view('about');
+    return view(theme_path('about'));
 });
 
 Route::get('/', 'GeneralController@homepage');
@@ -115,7 +115,7 @@ Route::post('/fetch-coordinate', 'GeneralController@fetchCoordinate');
 
 Route::prefix('ui')->group(function () {
     Route::get('/', function () {
-        return view('ui/welcome');
+        return view(theme_path('ui/welcome'));
     });
 
     Route::get('/{name}', function ($name) {

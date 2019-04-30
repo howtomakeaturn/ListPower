@@ -49,12 +49,12 @@
     <div class="row">
         <div class="col-md-6 info-data">
             @for ($i = 0 ; $i < ceil(count($fields)/2) ; $i++)
-                @include('info-field')
+                @include(theme_path('info-field'))
             @endfor
         </div>
         <div class="col-md-6 info-data">
             @for ($i = ceil(count($fields)/2) ; $i < count($fields) ; $i++)
-                @include('info-field')
+                @include(theme_path('info-field'))
             @endfor
         </div>
     </div>

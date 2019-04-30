@@ -25,7 +25,7 @@
                     </div>
                     @if ($topic->hasAddressColumn())
                     <div class="d-none d-md-block" style="min-width: 115px; text-align: right;">
-                        @include('map-button')
+                        @include(theme_path('map-button'))
                     </div>
                     @endif
                 </div>
@@ -41,6 +41,6 @@
 
 @if ($topic->hasAddressColumn() && AppCore::getCurrentMode() !== 'map')
 <span class="d-block d-md-none" style="position: fixed; bottom: 1rem; z-index: 1; left: 50%; transform: translateX(-50%);">
-    @include('map-button')
+    @include(theme_path('map-button'))
 </span>
 @endif

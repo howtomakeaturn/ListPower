@@ -1,4 +1,4 @@
-@extends('layout')
+@extends(theme_path('layout'))
 
 @section('content')
 
@@ -6,7 +6,7 @@
     <div class="row">
         <div class="col">
 
-            @include('repo-top')
+            @include(theme_path('repo-top'))
 
         </div>
     </div>
@@ -20,7 +20,7 @@
     <div class="row no-gutters" style="margin-left: -0.5rem; margin-right: -0.5rem;">
         @foreach ($topic->users as $user)
         <div class="col-xl-3 col-lg-4 col-md-6">
-            @include('contributor-card', ['contribution' => AppCore::getContribution($topic, $user)])
+            @include(theme_path('contributor-card'), ['contribution' => AppCore::getContribution($topic, $user)])
         </div>
         @endforeach
     </div>
@@ -34,7 +34,7 @@
     <div class="row no-gutters" style="margin-left: -0.5rem; margin-right: -0.5rem;">
         @foreach ($contributions as $contribution)
         <div class="col-xl-3 col-lg-4 col-md-6">
-            @include('contributor-card')
+            @include(theme_path('contributor-card'))
         </div>
         @endforeach
     </div>

@@ -1,4 +1,4 @@
-@extends('blank')
+@extends(theme_path('blank'))
 
 @section('content')
 

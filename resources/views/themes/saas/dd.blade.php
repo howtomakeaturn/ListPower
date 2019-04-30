@@ -1,4 +1,4 @@
-@extends('ui/layout')
+@extends(theme_path('ui/layout'))
 
 @section('content')
 

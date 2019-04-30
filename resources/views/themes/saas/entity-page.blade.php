@@ -1,4 +1,4 @@
-@extends('layout')
+@extends(theme_path('layout'))
 
 @section('head')
 <link rel="stylesheet" href="/vendor/gallery/css/blueimp-gallery.min.css">
@@ -10,7 +10,7 @@
     <div class="row">
         <div class="col">
 
-            @include('repo-top')
+            @include(theme_path('repo-top'))
 
         </div>
     </div>
@@ -24,13 +24,13 @@
                 <div class="card-body">
                     <h3><b>{{ $entity->name }}</b></h3>
                     <hr class="mb-4">
-                    @include('tag-section')
+                    @include(theme_path('tag-section'))
                     @if ($entity->topic->reviewColumns->count())
-                        @include('review-section')
+                        @include(theme_path('review-section'))
                     @endif
-                    @include('info-section')
-                    @include('photo-section')
-                    @include('comment-section')
+                    @include(theme_path('info-section'))
+                    @include(theme_path('photo-section'))
+                    @include(theme_path('comment-section'))
                 </div>
             </div>
 
@@ -94,7 +94,7 @@
                     <div>
                         <div class="btn-group w-100" role="group">
 
-                            @include('upload-photo-button')
+                            @include(theme_path('upload-photo-button'))
 
                         </div>
                     </div>
@@ -112,7 +112,7 @@
                     {{ $entity->editings->count() }} 次編修，{{ $entity->comments->count() }} 則留言
                     <hr>
                     <span style="" class="mr-1">{{ $entity->getContributors()->count() }} 位貢獻者</span>
-                    @include('user-faces', ['users' => $entity->getContributors()])
+                    @include(theme_path('user-faces'), ['users' => $entity->getContributors()])
                 </div>
             </div>
 

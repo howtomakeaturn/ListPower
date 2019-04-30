@@ -38,7 +38,7 @@
                         {{ $fields[$i][0] }}
                         </div>
                         <div class="col text-right">
-                            @include('stars', ['stars' => $fields[$i][1] ])
+                            @include(theme_path('stars'), ['stars' => $fields[$i][1] ])
                         </div>
                     </div>
                 </div>
@@ -52,7 +52,7 @@
                         {{ $fields[$i][0] }}
                         </div>
                         <div class="col text-right">
-                            @include('stars', ['stars' => $fields[$i][1] ])
+                            @include(theme_path('stars'), ['stars' => $fields[$i][1] ])
                         </div>
                     </div>
                 </div>

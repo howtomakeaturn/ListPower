@@ -75,3 +75,10 @@ function addressLink($address)
 
     return 'https://www.google.com/maps/place/' . $address;
 }
+
+function theme_path($name)
+{
+    $theme = config('listbox.theme');
+
+    return "themes.$theme.$name";
+}

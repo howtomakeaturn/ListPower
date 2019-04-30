@@ -100,14 +100,14 @@
                 </button>
             </div>
             <div class="modal-body">
-                @include('tag-section')
+                @include(theme_path('tag-section'))
                 @if ($entity->topic->reviewColumns->count())
-                    @include('review-section')
+                    @include(theme_path('review-section'))
                 @endif
-                @include('info-section')
+                @include(theme_path('info-section'))
                 <hr>
                 <span style="" class="mr-1">資料由 {{ $entity->getContributors()->count() }} 位貢獻者提供</span>
-                @include('user-faces', ['users' => $entity->getContributors()])
+                @include(theme_path('user-faces'), ['users' => $entity->getContributors()])
             </div>
             <div class="modal-footer">
                 <a class="btn btn-default" href="/view/{{ $entity->hashids() }}" target="_blank">查看詳情&nbsp; <i class="fas fa-external-link-alt"></i></a>

@@ -1,4 +1,4 @@
-@extends('layout')
+@extends(theme_path('layout'))
 
 @section('content')
 
@@ -8,7 +8,7 @@
     <div class="row">
         <div class="col">
 
-            @include('repo-top')
+            @include(theme_path('repo-top'))
 
         </div>
     </div>
@@ -18,16 +18,16 @@
 
     <div class="mt-3">{{ $topic->description }}</div>
 
-    @include('summary-bar')
+    @include(theme_path('summary-bar'))
 
-    @include('feed-bar')
+    @include(theme_path('feed-bar'))
 
     @endif
 
-    @include('filter-bar')
+    @include(theme_path('filter-bar'))
 
     @if (AppCore::getCurrentMode() === 'map')
-        @include('map')
+        @include(theme_path('map'))
     @else
         <div class="row no-gutters" style="margin-left: -0.5rem; margin-right: -0.5rem;">
             @if ($entities->count() === 0)
@@ -44,7 +44,7 @@
 
             @foreach ($entities as $entity)
                 <div class="col-xl-3 col-lg-4 col-md-6">
-                    @include('summary-card')
+                    @include(theme_path('summary-card'))
                 </div>
             @endforeach
         </div>

@@ -1,4 +1,4 @@
-@extends('layout')
+@extends(theme_path('layout'))
 
 @section('content')
 
@@ -6,7 +6,7 @@
     <div class="row">
         <div class="col">
 
-            @include('repo-top')
+            @include(theme_path('repo-top'))
 
         </div>
     </div>

@@ -28,7 +28,7 @@
         </div>
         <div class="mt-2" style="font-size: 0.875rem;">
             <span style="" class="mr-1">貢獻者</span>
-            @include('user-faces', ['users' => $topic->getRecentContributors()->take(5)])
+            @include(theme_path('user-faces'), ['users' => $topic->getRecentContributors()->take(5)])
         </div>
 
         <!--

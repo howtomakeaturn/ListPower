@@ -1,4 +1,4 @@
-@extends('layout')
+@extends(theme_path('layout'))
 
 @section('content')
 
@@ -15,22 +15,22 @@
                 <ul class="list-group list-group-flush">
                     @foreach ($records as $record)
                         @if ($record['type'] === 'add')
-                            @include('feeds/add')
+                            @include(theme_path('feeds/add'))
                         @endif
                         @if ($record['type'] === 'editing')
-                            @include('feeds/editing')
+                            @include(theme_path('feeds/editing'))
                         @endif
                         @if ($record['type'] === 'review')
-                            @include('feeds/review')
+                            @include(theme_path('feeds/review'))
                         @endif
                         @if ($record['type'] === 'comment')
-                            @include('feeds/comment')
+                            @include(theme_path('feeds/comment'))
                         @endif
                         @if ($record['type'] === 'tag')
-                            @include('feeds/tag')
+                            @include(theme_path('feeds/tag'))
                         @endif
                         @if ($record['type'] === 'photo')
-                            @include('feeds/photo')
+                            @include(theme_path('feeds/photo'))
                         @endif
                     @endforeach
                 </ul>

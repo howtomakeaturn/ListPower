@@ -1,4 +1,4 @@
-@extends('layout')
+@extends(theme_path('layout'))
 
 @section('content')
 
@@ -35,7 +35,7 @@
     <div class="row no-gutters" style="margin-left: -0.5rem; margin-right: -0.5rem;">
         @foreach ($topics as $topic)
             <div class="col-xl-3 col-lg-4 col-md-6">
-                @include('list-card')
+                @include(theme_path('list-card'))
             </div>
         @endforeach
     </div>
@@ -51,7 +51,7 @@
     <div class="row no-gutters" style="margin-left: -0.5rem; margin-right: -0.5rem;">
         @foreach ($topics as $topic)
             <div class="col-xl-3 col-lg-4 col-md-6">
-                @include('list-card')
+                @include(theme_path('list-card'))
             </div>
         @endforeach
 
@@ -71,7 +71,7 @@
 
 <div class="mt-4"></div>
 
-@include('footer')
+@include(theme_path('footer'))
 
 <style>
     .topic-title {
