@@ -2,6 +2,6 @@
 
 return [
 
-    'theme' => 'classical'
+    'theme' => env('LISTBOX_THEME', 'saas'),
 
 ];

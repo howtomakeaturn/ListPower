@@ -84,8 +84,6 @@ ListPower 基本上就是一個普通的 Laravel 應用程式。
   - 做成可設定「全開放」、「需審核」、「不可編輯」
 
 - 模板主題功能
-  - 開發 themes 功能，目前的主題僅是「listbox」平台主題
-  - 讓特定主題的站能有自己的品牌主題
   - 開發 theme helper layer（可以是一堆 function 或是 Facade），方便創造主題時能專注在 html/css
 
 - 用戶與清單權限功能
