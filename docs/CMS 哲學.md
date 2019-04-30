@@ -15,9 +15,17 @@
 - 總之，要用標準流程更新系統是很難的。檔案能夠拖放覆蓋來升級系統就很好
 - 讓 controllers, views 內容盡量少，data management layer 拉出來變成一層
 
+- 其實，這流程，就跟 git flow 同樣？只是變成 file structure
+
 # 系統檔案
 
 - system/helpers.php
+- routes/system/web.php
+
+# 主題資料夾
+
+- resources/views/themes/
+- routes/themes/
 
 # Todo
 
