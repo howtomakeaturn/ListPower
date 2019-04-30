@@ -33,9 +33,6 @@
     -->
     <link rel="stylesheet" type="text/css" href="/vendor/css/bootstrap.min.css">
 
-    <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}?v=1" rel="stylesheet">
-
     <link rel="stylesheet" type="text/css" href="/vendor/css/open-color.css">
 
     <script src='/vendor/js/jquery-3.3.1.min.js'></script>
@@ -168,6 +165,12 @@
             -webkit-transform: translate(-50%,-50%);
             -ms-transform: translate(-50%,-50%);
             transform: translate(-50%,-50%);
+        }
+    </style>
+
+    <style>
+        body {
+            background-color: var(--oc-gray-1);
         }
     </style>
 

@@ -9,7 +9,7 @@
     ];
 ?>
 
-<div class="card mt-3 ml-2 mr-2">
+<div class="card mt-3 ml-2 mr-2 border-0">
     <!--
     <img class="card-img-top" src=".../100px180/" alt="Card image cap">
     -->

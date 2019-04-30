@@ -7,7 +7,7 @@
     @if (true)
     <div class="row">
         <div class="col">
-            <div class="jumbotron mt-4 mb-0 p-5 text-center">
+            <div class="jumbotron mt-4 mb-0 p-5 text-center bg-white">
                 <h1 class="">
                     <span class="display-5 font-weight-bold">Classical Theme</span>
                     <!--
@@ -74,6 +74,9 @@
 @include(theme_path('footer'))
 
 <style>
+    body {
+        background-color: white;
+    }
     .topic-title {
 
     }
