@@ -3,6 +3,7 @@
 - app/controllers 硬改是免不了的
 - routes/web.php 硬改是免不了的
 - app 內一堆 model 硬改是免不了的
+- 趕進度的話，整個 git folder clone 之後，硬改是免不了的
 
 - 與其野心很大...
   - 大部份檔案都是系統檔案，不硬改，可升級，客製化 code 拉出來獨立撰寫
