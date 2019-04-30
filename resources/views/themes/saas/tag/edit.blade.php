@@ -1,4 +1,4 @@
-@extends('layout')
+@extends(theme_path('layout'))
 
 @section('content')
 
@@ -6,7 +6,7 @@
     <div class="row">
         <div class="col">
 
-            @include('repo-top')
+            @include(theme_path('repo-top'))
 
         </div>
     </div>
@@ -40,11 +40,11 @@
                         </span>
 
                         @if(!$tag->isUsed(Auth::user(), $entity))
-                            @include('tag/_apply')
+                            @include(theme_path('tag/_apply'))
                         @else
                             <?php
                             /*
-                            @include('tag/_unapply')
+                            @include(theme_path('tag/_unapply'))
                             */
                             ?>
                         @endif
@@ -75,7 +75,7 @@
                             {{ $tag->name }}
                         </span>
 
-                        @include('tag/_unapply')
+                        @include(theme_path('tag/_unapply'))
 
                     </div>
                     @endforeach
