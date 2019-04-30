@@ -18,7 +18,7 @@ class GeneralController extends Controller
     {
         $topics = Topic::where('status', Topic::STATUS_PUBLIC)->get();
 
-        return view('homepage', compact('topics'));
+        return view(theme_path('homepage'), compact('topics'));
     }
 
     function repo(Request $request, $id)
@@ -62,14 +62,14 @@ class GeneralController extends Controller
 
             if ($filter === null) $center['zoom'] = 10;
 
-            return view('repo', compact('topic', 'entities', 'center'));
+            return view(theme_path('repo'), compact('topic', 'entities', 'center'));
         }
 
         $entities = $entities->sortByDesc(function($entity) {
             return $entity->tags->count() + $entity->photos->count() + $entity->comments->count() + $entity->reviews->count();
         });
 
-        return view('repo', compact('topic', 'entities'));
+        return view(theme_path('repo'), compact('topic', 'entities'));
     }
 
     function contributors($id)
@@ -84,7 +84,7 @@ class GeneralController extends Controller
 
         AppCore::setOpenGraphTitle($topic->name);
 
-        return view('contributors', compact('topic', 'contributions'));
+        return view(theme_path('contributors'), compact('topic', 'contributions'));
     }
 
     function allContributors()
@@ -93,7 +93,7 @@ class GeneralController extends Controller
 
         $contributions = $get->getContributions();
 
-        return view('all-contributors', compact('contributions'));
+        return view(theme_path('all-contributors'), compact('contributions'));
     }
 
     function view($id)
@@ -108,7 +108,7 @@ class GeneralController extends Controller
 
         AppCore::setOpenGraphTitle($entity->name);
 
-        return view('entity-page', compact('entity', 'topic'));
+        return view(theme_path('entity-page'), compact('entity', 'topic'));
     }
 
     function review($id)
@@ -123,7 +123,7 @@ class GeneralController extends Controller
 
         AppCore::setOpenGraphTitle($entity->name);
 
-        return view('review', compact('entity', 'topic'));
+        return view(theme_path('review'), compact('entity', 'topic'));
     }
 
     function edit($id)
@@ -138,7 +138,7 @@ class GeneralController extends Controller
 
         AppCore::setOpenGraphTitle($entity->name);
 
-        return view('edit', compact('entity', 'topic'));
+        return view(theme_path('edit'), compact('entity', 'topic'));
     }
 
     function comment($id)
@@ -147,7 +147,7 @@ class GeneralController extends Controller
 
         $entity = Entity::find($id);
 
-        return view('comment', compact('entity'));
+        return view(theme_path('comment'), compact('entity'));
     }
 
     public function submitReview(Request $request)
@@ -195,7 +195,7 @@ class GeneralController extends Controller
 
         $text = '系統已收到您的評分，非常謝謝您。';
 
-        return view('msg', compact('title', 'text'));
+        return view(theme_path('msg'), compact('title', 'text'));
         */
     }
 
@@ -205,7 +205,7 @@ class GeneralController extends Controller
 
         $entity = Entity::find($id);
 
-        return view('reviews', compact('entity'));
+        return view(theme_path('reviews'), compact('entity'));
     }
 
     function submitComment(Request $request)
@@ -227,7 +227,7 @@ class GeneralController extends Controller
 
         $text = '系統已收到您的留言，非常謝謝您。';
 
-        return view('msg', compact('title', 'text'));
+        return view(theme_path('msg'), compact('title', 'text'));
         */
     }
 
@@ -275,7 +275,7 @@ class GeneralController extends Controller
 
         $text = '系統已收到您編輯的資料，非常謝謝您。';
 
-        return view('msg', compact('title', 'text'));
+        return view(theme_path('msg'), compact('title', 'text'));
         */
     }
 
@@ -287,7 +287,7 @@ class GeneralController extends Controller
 
         AppCore::setOpenGraphTitle($topic->name);
 
-        return view('add', compact('topic'));
+        return view(theme_path('add'), compact('topic'));
     }
 
     function submitAdd(Request $request)
@@ -322,7 +322,7 @@ class GeneralController extends Controller
 
         $text = '系統已收到您新增的資料，非常謝謝您。';
 
-        return view('list-msg', compact('topic','title', 'text'));
+        return view(theme_path('list-msg'), compact('topic','title', 'text'));
         */
 
         return redirect()->to('/view/' . $entity->hashids());
@@ -331,7 +331,7 @@ class GeneralController extends Controller
     function createList(Request $request)
     {
         if (Auth::check() && Auth::user()->isAdmin()) {
-            return view('create-list');
+            return view(theme_path('create-list'));
         }
     }
 
@@ -389,7 +389,7 @@ class GeneralController extends Controller
 
         AppCore::setOpenGraphTitle($topic->name);
 
-        return view('settings', compact('topic'));
+        return view(theme_path('settings'), compact('topic'));
     }
 
     function submitSettings(Request $request)
@@ -410,7 +410,7 @@ class GeneralController extends Controller
 
         $text = '系統已經更新清單設定。';
 
-        return view('list-msg', compact('topic','title', 'text'));
+        return view(theme_path('list-msg'), compact('topic','title', 'text'));
     }
 
     function dashboard(Request $request, $id)
@@ -435,7 +435,7 @@ class GeneralController extends Controller
             return $entity->showLatitude();
         });
 
-        return view('dashboard', compact('topic', 'entities'));
+        return view(theme_path('dashboard'), compact('topic', 'entities'));
     }
 
     function fetchCoordinate(Request $request)
@@ -491,7 +491,7 @@ class GeneralController extends Controller
 
         AppCore::setOpenGraphTitle($topic->name);
 
-        return view('feeds', compact('topic', 'records'));
+        return view(theme_path('feeds'), compact('topic', 'records'));
     }
 
     function allFeeds(Request $request)
@@ -502,7 +502,7 @@ class GeneralController extends Controller
 
         $records = paginateCollection($records, 10);
 
-        return view('all-feeds', compact('records'));
+        return view(theme_path('all-feeds'), compact('records'));
     }
 
     function uploadPhoto(Request $request)
@@ -566,7 +566,7 @@ class GeneralController extends Controller
 
         $records = $csv->getRecords();
 
-        return view('parse', compact('header', 'records', 'content'));
+        return view(theme_path('parse'), compact('header', 'records', 'content'));
     }
 
     function submitImportReal(Request $request)

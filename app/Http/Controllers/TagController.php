@@ -30,7 +30,7 @@ class TagController extends Controller
 
         $otherTags = $query->getAllByNotUserNotOnEntity(Auth::user(), $entity);
 
-        return view('havacore::tag/edit', compact('entity', 'userTags', 'userOtherTags', 'otherTags'));
+        return view(theme_path('havacore::tag/edit'), compact('entity', 'userTags', 'userOtherTags', 'otherTags'));
         */
         $id = Hashids::decode($id)[0];
 
@@ -50,7 +50,7 @@ class TagController extends Controller
 
         $topic = $entity->topic;
 
-        return view('tag/edit', compact('entity', 'userTags', 'userOtherTags', 'otherTags', 'topic'));
+        return view(theme_path('tag/edit'), compact('entity', 'userTags', 'userOtherTags', 'otherTags', 'topic'));
     }
 
     function newTag(Request $request)
