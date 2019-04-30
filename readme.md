@@ -104,6 +104,12 @@ ListPower 基本上就是一個普通的 Laravel 應用程式。
 - 更多登入方式
   - Google, Twitter, Native Login, etc...
 
+- More...
+  - 通用 admin panel for data management
+  - 將 theme 之外全部 code 拉成一層 layer
+  - create classical theme
+  - theme & extensible & upgradable code structure
+
 ## Contributing
 
 謝謝您考慮貢獻開發到本專案。
