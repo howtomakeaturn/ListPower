@@ -15,7 +15,7 @@
                     -->
                 </h1>
                 <p class="lead mt-3">This is ListBox Classical theme.</p>
-                <p class="lead mb-0">Feel free to start from here.</p>
+                <p class="lead mb-0">{{ greet() }}</p>
                 <!--
                 <a class="btn btn-primary btn-lg" href="#" role="button">動手做一張清單</a>
                 -->
