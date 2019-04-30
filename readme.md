@@ -105,7 +105,6 @@ ListPower 基本上就是一個普通的 Laravel 應用程式。
 - More...
   - 通用 admin panel for data management
   - 將 theme 之外全部 code 拉成一層 layer
-  - create classical theme
   - theme & extensible & upgradable code structure
 
 ## Contributing
