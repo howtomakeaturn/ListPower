@@ -22,7 +22,7 @@
 
             <div class="card mt-3">
                 <div class="card-body">
-                    <h3><b>{{ $entity->name }}</b></h3>
+                    <h2 class="h3"><b>{{ $entity->name }}</b></h2>
                     <hr class="mb-4">
                     @include(theme_path('tag-section'))
                     @if ($entity->topic->reviewColumns->count())

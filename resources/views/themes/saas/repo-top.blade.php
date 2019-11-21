@@ -1,5 +1,5 @@
 <div class="mt-4">
-    <a href="/list/{{ $topic->hashids() }}"><h5 class="mb-0"><b>{{ $topic->name }}</b></h5></a>
+    <a href="/list/{{ $topic->hashids() }}"><h1 class="h5 mb-0"><b>{{ $topic->name }}</b></h1></a>
 </div>
 
 <ul class="nav nav-tabs main mt-3">
