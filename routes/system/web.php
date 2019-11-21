@@ -11,6 +11,8 @@
 |
 */
 
+Route::get('sitemap.xml', 'SitemapController@index');
+
 Route::get('/test-message', function() {
     return redirect()->to('/')
         ->with('message.title', '上傳照片成功！')

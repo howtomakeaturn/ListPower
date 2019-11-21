@@ -15,6 +15,7 @@
         "laravel/framework": "5.8.*",
         "laravel/socialite": "^4.0",
         "laravel/tinker": "^1.0",
+        "laravelium/sitemap": "3.1.*",
         "league/csv": "^9.1",
         "nwidart/laravel-modules": "^4.0",
         "ramsey/uuid": "^3.8",
