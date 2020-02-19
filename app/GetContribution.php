@@ -12,22 +12,17 @@ class GetContribution
             ->withCount('comments')
             ->withCount('reviews')
             ->withCount('editings')
-            //->withCount('entityTags')
+            ->withCount('entityTags')
             ->withCount('photos')
             ->where('id', $user->id)
             ->first();
-
-        $tagCount = DB::table('entity_tag')
-            ->join('entities', 'entity_tag.entity_id', '=', 'entities.id')
-            ->where('entity_tag.user_id', $user->id)
-            ->count();
 
         return [
             'entityCount' => $user->entities_count,
             'reviewCount' => $user->reviews_count,
             'editingCount' => $user->editings_count,
             'commentCount' => $user->comments_count,
-            'tagCount' => $tagCount,
+            'tagCount' => $user->entity_tags_count,
             'photoCount' => $user->photos_count,
             'user' => $user
         ];
