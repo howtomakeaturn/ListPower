@@ -37,6 +37,7 @@ class GeneralController extends Controller
             ->with('reviews')
             ->with('topic')
             ->with('infoFields')
+            ->with('reviewFields')
             ->get();
 
         if ($filter = AppCore::resolveFilter($topic, $request)) {
