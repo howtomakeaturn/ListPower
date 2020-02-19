@@ -86,9 +86,13 @@ class Entity extends Model
     {
         $entity = $this;
 
+        return $this->uniqueTags();
+
+        /*
         return $this->uniqueTags()->sortByDesc(function($tag)use($entity){
             return $tag->countOnEntity($entity);
         });
+        */
     }
 
     function getAddressInfo()
