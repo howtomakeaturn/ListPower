@@ -84,6 +84,8 @@ class GeneralController extends Controller
 
     function contributors($id)
     {
+        return '此頁面整理中，暫不顯示。';
+
         $id = Hashids::decode($id)[0];
 
         $topic = Topic::find($id);
@@ -99,6 +101,8 @@ class GeneralController extends Controller
 
     function allContributors()
     {
+        return '此頁面整理中，暫不顯示。';
+
         $get = new \App\GetContribution();
 
         $contributions = $get->getContributions();
