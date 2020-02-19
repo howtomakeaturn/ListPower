@@ -232,6 +232,8 @@ class Entity extends Model
 
     function showLatitude()
     {
+        return $this->location ? $this->location->latitude : null;
+
         $row = \DB::table('locations')->where('entity_id', $this->id)->first();
 
         if ($row) return $row->latitude;
@@ -241,6 +243,8 @@ class Entity extends Model
 
     function showLongitude()
     {
+        return $this->location ? $this->location->longitude : null;
+
         $row = \DB::table('locations')->where('entity_id', $this->id)->first();
 
         if ($row) return $row->longitude;

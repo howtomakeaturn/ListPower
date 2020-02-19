@@ -33,7 +33,8 @@
                 });
 
                 google.maps.event.addListener(marker, 'click', function() {
-                    $('#modal-{{ $entity->id }}').modal('show')
+                    // $('#modal-{{ $entity->id }}').modal('show')
+                    window.open('/view/{{ $entity->hashids() }}','_blank');
                 });
 
                 markers.push(marker);
@@ -88,6 +89,8 @@
     }
 </style>
 
+<?php
+/*
 @foreach ($entities as $entity)
 <!-- Modal -->
 <div class="modal" id="modal-{{ $entity->id }}" tabindex="-1" role="dialog" aria-hidden="true">
@@ -117,6 +120,8 @@
     </div>
 </div>
 @endforeach
+*/
+?>
 
 <style>
     .map-main-link {
