@@ -8,42 +8,27 @@ class GetContribution
 {
     function getContribution($user)
     {
-        $entityCount = DB::table('entities')
-            ->where('user_id', $user->id)
-            ->count();
-
-        $commentCount = DB::table('comments')
-            ->join('entities', 'comments.entity_id', '=', 'entities.id')
-            ->where('comments.user_id', $user->id)
-            ->count();
-
-        $reviewCount = DB::table('reviews')
-            ->join('entities', 'reviews.entity_id', '=', 'entities.id')
-            ->where('reviews.user_id', $user->id)
-            ->count();
-
-        $editingCount = DB::table('editings')
-            ->join('entities', 'editings.entity_id', '=', 'entities.id')
-            ->where('editings.user_id', $user->id)
-            ->count();
+        $user = User::withCount('entities')
+            ->withCount('comments')
+            ->withCount('reviews')
+            ->withCount('editings')
+            //->withCount('entityTags')
+            ->withCount('photos')
+            ->where('id', $user->id)
+            ->first();
 
         $tagCount = DB::table('entity_tag')
             ->join('entities', 'entity_tag.entity_id', '=', 'entities.id')
             ->where('entity_tag.user_id', $user->id)
             ->count();
 
-        $photoCount = DB::table('photos')
-            ->join('entities', 'photos.entity_id', '=', 'entities.id')
-            ->where('photos.user_id', $user->id)
-            ->count();
-
         return [
-            'entityCount' => $entityCount,
-            'reviewCount' => $reviewCount,
-            'editingCount' => $editingCount,
-            'commentCount' => $commentCount,
+            'entityCount' => $user->entities_count,
+            'reviewCount' => $user->reviews_count,
+            'editingCount' => $user->editings_count,
+            'commentCount' => $user->comments_count,
             'tagCount' => $tagCount,
-            'photoCount' => $photoCount,
+            'photoCount' => $user->photos_count,
             'user' => $user
         ];
     }

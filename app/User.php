@@ -33,6 +33,36 @@ class User extends Authenticatable
         return $this->belongsToMany('App\Topic');
     }
 
+    function entities()
+    {
+        return $this->hasMany('App\Entity');
+    }
+
+    function comments()
+    {
+        return $this->hasMany('App\Comment');
+    }
+
+    function reviews()
+    {
+        return $this->hasMany('App\Review');
+    }
+
+    function editings()
+    {
+        return $this->hasMany('App\Editing');
+    }
+
+    function photos()
+    {
+        return $this->hasMany('App\Photo');
+    }
+
+    function entityTags()
+    {
+        return $this->hasMany('App\EntityTag');
+    }
+
     function isAdmin()
     {
         return in_array($this->email, config('general.super_admin'));
