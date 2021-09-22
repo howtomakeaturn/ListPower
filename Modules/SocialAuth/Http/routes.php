@@ -28,5 +28,11 @@ Route::group(['middleware' => 'web',/*'prefix' => 'socialauth', */ 'namespace' =
         echo '本網站會利用這些資訊建立您的個人檔案，也會用來顯示在網站上。';
         echo '<br>';
         echo '本網站也會利用這些資訊建立社群資料，讓大家知道哪些使用者貢獻特別多。';
+        echo '<br>';
+        echo '刪除個人資料';
+        echo '<br>';
+        echo '如果您要刪除網站上的個人資料，請透過 FB 粉專聯絡站長。';
+        echo '<br>';
+        echo '也可以使用 Email 聯絡站長：howtomakeaturn@hotmail.com';
     });
 });
