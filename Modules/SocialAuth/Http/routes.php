@@ -29,6 +29,7 @@ Route::group(['middleware' => 'web',/*'prefix' => 'socialauth', */ 'namespace' =
         echo '<br>';
         echo '本網站也會利用這些資訊建立社群資料，讓大家知道哪些使用者貢獻特別多。';
         echo '<br>';
+        echo '<br>';
         echo '刪除個人資料';
         echo '<br>';
         echo '如果您要刪除網站上的個人資料，請透過 FB 粉專聯絡站長。';
