@@ -283,6 +283,7 @@
                         <li><a href="https://memes.tw/pro/list/E62Yl8">全台藝廊大推薦：一起欣賞藝術吧！</a></li>
                         <li><a href="https://memes.tw/pro/list/PnbBna">全台獨立書店大推薦：一起閱讀書籍吧！</a></li>
                     </ul>
+                    <p>未來的功能開發與維護，會以新平台版本為主，希望大家能幫忙在新平台建立資料！謝謝！</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
