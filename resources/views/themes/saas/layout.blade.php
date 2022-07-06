@@ -262,6 +262,35 @@
 
     </nav>
 
+    <div class="alert alert-info alert-dismissible text-center" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <strong>站長新作品！</strong>讓每個人都可以針對不同主題，設計清單、整理資料！<a href="#" class="alert-link" data-toggle="modal" data-target="#prolistModal">點此了解更多</a>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="prolistModal" tabindex="-1" role="dialog" aria-labelledby="">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="">達人清單 ProList</h4>
+                </div>
+                <div class="modal-body">
+                    <p>站長開發了新平台版本，讓每個人都可以針對不同主題，設計清單、整理資料！請參考：</p>
+                    <ul>
+                        <li><a href="https://memes.tw/pro">達人清單 ProList - 屬於各領域達人的資料清單</a></li>
+                        <li><a href="https://memes.tw/pro/list/vdyqdr">全台酒吧大推薦：下班後小酌一杯！</a></li>
+                        <li><a href="https://memes.tw/pro/list/E62Yl8">全台藝廊大推薦：一起欣賞藝術吧！</a></li>
+                        <li><a href="https://memes.tw/pro/list/PnbBna">全台獨立書店大推薦：一起閱讀書籍吧！</a></li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     @include(theme_path('message-bar'))
 
     @yield('content')
