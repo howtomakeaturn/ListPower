@@ -262,7 +262,7 @@
 
     </nav>
 
-    <div class="alert alert-info alert-dismissible text-center" role="alert">
+    <div class="alert alert-info alert-dismissible text-center d-none" role="alert">
         <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <strong>站長新作品！</strong>讓每個人都可以針對不同主題，設計清單、整理資料！<a href="#" class="alert-link" data-toggle="modal" data-target="#prolistModal">點此了解更多</a>
     </div>
