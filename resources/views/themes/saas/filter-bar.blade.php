@@ -14,7 +14,7 @@
                             <span class="mr-2">全部</span>
                         @endif
                         @foreach ($topic->getValidCityNames() as $city)
-                            @if (AppCore::getCurrentFilter()['filter'] === $city)
+                            @if (AppCore::getCurrentFilter() !== null && AppCore::getCurrentFilter()['filter'] === $city)
                                 <span class="mr-2">{{ $city }}</span>
                             @else
                                 <a href="/list/{{ $topic->hashids() }}?f{{ $topic->getFirstCityColumn()->id }}={{ $city }}" class="mr-2">
