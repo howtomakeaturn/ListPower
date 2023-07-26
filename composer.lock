@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "885fc7b85fe36cb3bc010af1583b135f",
+    "content-hash": "f3532a13301ea07d7499ff7b6e49153c",
     "packages": [
         {
             "name": "brick/math",
@@ -2701,29 +2701,30 @@
         },
         {
             "name": "nwidart/laravel-modules",
-            "version": "4.1.0",
+            "version": "v8.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nWidart/laravel-modules.git",
-                "reference": "0efd81aef05419a9d032e5bbd7859dd8a67cb7e3"
+                "reference": "ee06dc0ac019cc392bd66a1c3e6cec0412fcc52d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nWidart/laravel-modules/zipball/0efd81aef05419a9d032e5bbd7859dd8a67cb7e3",
-                "reference": "0efd81aef05419a9d032e5bbd7859dd8a67cb7e3",
+                "url": "https://api.github.com/repos/nWidart/laravel-modules/zipball/ee06dc0ac019cc392bd66a1c3e6cec0412fcc52d",
+                "reference": "ee06dc0ac019cc392bd66a1c3e6cec0412fcc52d",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.1"
+                "ext-json": "*",
+                "php": ">=7.3"
             },
             "require-dev": {
-                "friendsofphp/php-cs-fixer": "^2.7",
-                "laravel/framework": "5.7.*",
+                "friendsofphp/php-cs-fixer": "^2.16",
+                "laravel/framework": "^8.0",
                 "mockery/mockery": "~1.0",
-                "orchestra/testbench": "^3.7",
-                "phpstan/phpstan": "^0.9.2",
-                "phpunit/phpunit": "~7.3",
-                "spatie/phpunit-snapshot-assertions": "^1.0"
+                "orchestra/testbench": "^6.2",
+                "phpstan/phpstan": "^0.12.14",
+                "phpunit/phpunit": "^8.5",
+                "spatie/phpunit-snapshot-assertions": "^2.1.0|^4.2"
             },
             "type": "library",
             "extra": {
@@ -2736,7 +2737,7 @@
                     }
                 },
                 "branch-alias": {
-                    "dev-master": "4.0-dev"
+                    "dev-master": "8.0-dev"
                 }
             },
             "autoload": {
@@ -2769,9 +2770,15 @@
             ],
             "support": {
                 "issues": "https://github.com/nWidart/laravel-modules/issues",
-                "source": "https://github.com/nWidart/laravel-modules/tree/4.1.0"
+                "source": "https://github.com/nWidart/laravel-modules/tree/v8.3.0"
             },
-            "time": "2019-03-04T09:50:46+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/nwidart",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-02-10T20:30:19+00:00"
         },
         {
             "name": "opis/closure",
