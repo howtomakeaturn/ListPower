@@ -34,7 +34,7 @@ class SocialAuthController extends Controller
 
     public function auth(Request $request)
     {
-        return Socialite::driver('facebook')->redirect();
+        return Socialite::driver('facebook')->usingGraphVersion('v17.0')->redirect();
     }
 
     public function callback(Request $request)
